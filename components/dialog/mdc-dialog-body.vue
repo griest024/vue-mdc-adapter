@@ -1,5 +1,5 @@
 <template>
-  <section class="mdc-dialog__body">
+  <section class="mdc-dialog__body" :class="classes">
     <slot/>
   </section>
 </template>

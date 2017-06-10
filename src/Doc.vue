@@ -30,14 +30,14 @@
            </component>
       </div>
 
-    <mdc-dialog @MDCDialog:accept="dialogAction = 'accepted'" @MDCDialog:cancel="dialogAction = 'cancelled'" ref="dialog" label="mdc-dialog-label" description="mdc-dialog-description">
+    <mdc-dialog @MDCDialog:accept="dialogAction = 'accepted'" @MDCDialog:cancel="dialogAction = 'cancelled'" ref="dialog" label="dialog-label" description="dialog-description">
       <mdc-dialog-surface>
         <mdc-dialog-header>
-          <mdc-dialog-header-title id="mdc-dialog-label">
+          <mdc-dialog-header-title id="dialog-label">
             Dialog Title
           </mdc-dialog-header-title>
         </mdc-dialog-header>
-        <mdc-dialog-body id="mdc-dialog-description">
+        <mdc-dialog-body id="dialog-description">
           Dialog body
         </mdc-dialog-body>
         <mdc-dialog-footer>

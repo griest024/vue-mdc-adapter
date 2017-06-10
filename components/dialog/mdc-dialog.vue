@@ -1,5 +1,5 @@
 <template>
-  <aside class="mdc-dialog" :class="classes" role="alertdialog" :aria-labelledby="label" :aria-describedby="description">
+  <aside class="mdc-dialog" :class="classes" :aria-labelledby="label" :aria-describedby="description">
     <slot/>
   </aside>
 </template>
