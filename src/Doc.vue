@@ -29,8 +29,33 @@
            </mdc-list>
            </component>
       </div>
-    
+
+    <mdc-dialog @MDCDialog:accept="dialogAction = 'accepted'" @MDCDialog:cancel="dialogAction = 'cancelled'" ref="dialog" label="mdc-dialog-label" description="mdc-dialog-description">
+      <mdc-dialog-surface>
+        <mdc-dialog-header>
+          <mdc-dialog-header-title id="mdc-dialog-label">
+            Dialog Title
+          </mdc-dialog-header-title>
+        </mdc-dialog-header>
+        <mdc-dialog-body id="mdc-dialog-description">
+          Dialog body
+        </mdc-dialog-body>
+        <mdc-dialog-footer>
+          <mdc-dialog-footer-button cancel>Cancel</mdc-dialog-footer-button>
+          <mdc-dialog-footer-button accept>Accept</mdc-dialog-footer-button>
+        </mdc-dialog-footer>
+      </mdc-dialog-surface>
+    </mdc-dialog>
+
       <div>
+        <section id="dialog" class="doc-section">
+          <mdc-headline>Dialog</mdc-headline>
+          <div class="doc-center">
+            <mdc-button @click="$refs.dialog.open()" raised primary>Open Dialog</mdc-button>
+            <span>{{ dialogMessage }}</span>
+          </div>
+        </section>
+
         <section id="buttons" class="doc-section">
           <mdc-headline>Buttons</mdc-headline>
           <div class="doc-center">
@@ -314,6 +339,9 @@ export default {
   computed: {
     drawerComponent () {
       return 'mdc-' + this.drawerType.toString() + '-drawer'
+    },
+    dialogMessage () {
+      return this.dialogAction ? 'You ' + this.dialogAction.toString() + ' the dialog' : ''
     }
   },
   data () {
@@ -330,7 +358,8 @@ export default {
       password: '',
       picked: null,
       menuMessage: '',
-      drawerType: 'persistent'
+      drawerType: 'persistent',
+      dialogAction: ''
     }
   },
   mounted () {
