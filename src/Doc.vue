@@ -47,11 +47,41 @@
       </mdc-dialog-surface>
     </mdc-dialog>
 
+    <mdc-dialog @MDCDialog:accept="dialogAction = 'accepted'" @MDCDialog:cancel="dialogAction = 'cancelled'" ref="scrollableDialog" label="scrollable-dialog-label" description="scrollable-dialog-description">
+      <mdc-dialog-surface>
+        <mdc-dialog-header>
+          <mdc-dialog-header-title id="scrollable-dialog-label">
+            Dialog Title
+          </mdc-dialog-header-title>
+        </mdc-dialog-header>
+        <mdc-dialog-body scrollable id="scrollable-dialog-description">
+          <mdc-list>
+            <mdc-list-item>Single-line item</mdc-list-item>
+            <mdc-list-item>Single-line item</mdc-list-item>
+            <mdc-list-item>Single-line item</mdc-list-item>
+            <mdc-list-item>Single-line item</mdc-list-item>
+            <mdc-list-item>Single-line item</mdc-list-item>
+            <mdc-list-item>Single-line item</mdc-list-item>
+            <mdc-list-item>Single-line item</mdc-list-item>
+            <mdc-list-item>Single-line item</mdc-list-item>
+            <mdc-list-item>Single-line item</mdc-list-item>
+            <mdc-list-item>Single-line item</mdc-list-item>
+            <mdc-list-item>Single-line item</mdc-list-item>
+          </mdc-list>
+        </mdc-dialog-body>
+        <mdc-dialog-footer>
+          <mdc-dialog-footer-button cancel>Cancel</mdc-dialog-footer-button>
+          <mdc-dialog-footer-button accept>Accept</mdc-dialog-footer-button>
+        </mdc-dialog-footer>
+      </mdc-dialog-surface>
+    </mdc-dialog>
+
       <div>
         <section id="dialog" class="doc-section">
           <mdc-headline>Dialog</mdc-headline>
           <div class="doc-center">
             <mdc-button @click="$refs.dialog.open()" raised primary>Open Dialog</mdc-button>
+            <mdc-button @click="$refs.scrollableDialog.open()" raised primary>Open Scrollable Dialog</mdc-button>
             <span>{{ dialogMessage }}</span>
           </div>
         </section>
