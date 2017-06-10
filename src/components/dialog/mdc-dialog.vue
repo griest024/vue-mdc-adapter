@@ -1,5 +1,16 @@
 <template>
-  <aside class="mdc-dialog" :class="classes" :aria-labelledby="label" :aria-describedby="description">
+  <aside class="mdc-dialog" :class="classes" :aria-labelledby="labelID" :aria-describedby="descriptionID">
+    <mdc-dialog-surface v-if="$slots.title || $slots.body || titleText || bodyText || acceptText || cancelText">
+      <mdc-dialog-header :titleText="titleText" v-if="$slots.title || titleText">
+        <mdc-dialog-header-title :id="labelID" v-if="$slots.title">
+          <slot name="title" />
+        </mdc-dialog-header-title>
+      </mdc-dialog-header>
+      <mdc-dialog-body :text="bodyText" :id="descriptionID" :scrollable="scrollable" v-if="$slots.body || bodyText">
+        <slot name="body" />
+      </mdc-dialog-body>
+      <mdc-dialog-footer v-if="acceptText || cancelText" :cancelText="cancelText" :acceptText="acceptText" />        
+    </mdc-dialog-surface>
     <slot/>
   </aside>
 </template>
@@ -13,9 +24,16 @@ import MDCDialogFoundation from '@material/dialog/foundation'
 import * as util from '@material/dialog/util'
 
 export default {
+  name: 'mdc-dialog',
   props: {
     label: String,
-    description: String
+    description: String,
+    scrollable: Boolean,
+    id: String,
+    acceptText: String,
+    cancelText: String,
+    titleText: String,
+    bodyText: String
   },
   data () {
     return {
@@ -43,6 +61,12 @@ export default {
     }
   },
   computed: {
+    labelID () {
+      return this.id ? this.id.toString() + '-label' : this.label.toString()
+    },
+    descriptionID () {
+      return this.id ? this.id.toString() + '-description' : this.description.toString()
+    },
     classes () {
       return {
         ...this.rootClasses
@@ -103,10 +127,10 @@ export default {
         vm.surfaceElement.removeEventListener('transitionend', handler)
       },
       notifyAccept () {
-        vm.$emit(MDCDialogFoundation.strings.ACCEPT_EVENT)
+        vm.$emit('accept')
       },
       notifyCancel () {
-        vm.$emit(MDCDialogFoundation.strings.CANCEL_EVENT)
+        vm.$emit('cancel')
       },
       trapFocusOnSurface () {
         vm.focusTrap.activate()

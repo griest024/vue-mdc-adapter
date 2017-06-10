@@ -8,6 +8,7 @@
 import '../button/mdc-button'
 
 export default {
+  name: 'mdc-dialog-footer-button',
   components: [
     'mdc-button'
   ],

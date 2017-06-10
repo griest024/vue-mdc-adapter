@@ -30,24 +30,11 @@
            </component>
       </div>
 
-    <mdc-dialog @MDCDialog:accept="dialogAction = 'accepted'" @MDCDialog:cancel="dialogAction = 'cancelled'" ref="dialog" label="dialog-label" description="dialog-description">
-      <mdc-dialog-surface>
-        <mdc-dialog-header>
-          <mdc-dialog-header-title id="dialog-label">
-            Dialog Title
-          </mdc-dialog-header-title>
-        </mdc-dialog-header>
-        <mdc-dialog-body id="dialog-description">
-          Dialog body
-        </mdc-dialog-body>
-        <mdc-dialog-footer>
-          <mdc-dialog-footer-button cancel>Cancel</mdc-dialog-footer-button>
-          <mdc-dialog-footer-button accept>Accept</mdc-dialog-footer-button>
-        </mdc-dialog-footer>
-      </mdc-dialog-surface>
-    </mdc-dialog>
+    <!-- lazy mode usage -->
+    <mdc-dialog @accept="dialogAction = 'accepted'" @cancel="dialogAction = 'cancelled'" ref="dialog" id="dialog" titleText="Dialog Title" bodyText="Dialog Body" acceptText="OK" cancelText="No Thanks" />
 
-    <mdc-dialog @MDCDialog:accept="dialogAction = 'accepted'" @MDCDialog:cancel="dialogAction = 'cancelled'" ref="scrollableDialog" label="scrollable-dialog-label" description="scrollable-dialog-description">
+    <!-- custom mode usage -->
+    <mdc-dialog @accept="dialogAction = 'accepted'" @cancel="dialogAction = 'cancelled'" ref="scrollableDialog" label="scrollable-dialog-label" description="scrollable-dialog-description">
       <mdc-dialog-surface>
         <mdc-dialog-header>
           <mdc-dialog-header-title id="scrollable-dialog-label">
