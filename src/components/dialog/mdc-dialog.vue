@@ -142,6 +142,10 @@ export default {
         return el === vm.surfaceElement
       }
     })
+    this.foundation.init()
+  },
+  beforeDestroy () {
+    this.foundation.destroy()
   }
 }
 </script>
