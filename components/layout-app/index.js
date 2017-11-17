@@ -1,6 +1,7 @@
 import VueMDCLayoutApp from './mdc-layout-app.vue'
+import {classPrefix} from './constants'
 
-export {VueMDCLayoutApp}
+export {classPrefix, VueMDCLayoutApp}
 
 export default {
   install (vm) {

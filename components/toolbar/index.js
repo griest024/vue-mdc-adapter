@@ -4,8 +4,10 @@ import VueMDCToolbarSection from './mdc-toolbar-section.vue'
 import VueMDCToolbarMenu from './mdc-toolbar-menu.vue'
 import VueMDCToolbarTitle from './mdc-toolbar-title.vue'
 import VueMDCToolbarIcon from './mdc-toolbar-icon.vue'
+import {classPrefix} from './constants'
 
 export {
+  classPrefix,
   VueMDCToolbar,
   VueMDCToolbarRow,
   VueMDCToolbarSection,

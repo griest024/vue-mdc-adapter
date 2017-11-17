@@ -1,10 +1,14 @@
 import VueMDCLayoutGrid from './mdc-layout-grid.vue'
 import VueMDCLayoutCell from './mdc-layout-cell.vue'
 import VueMDCLayoutInnerGrid from './mdc-layout-inner-grid.vue'
+import {classPrefix} from './constants'
 
-export {VueMDCLayoutGrid}
-export {VueMDCLayoutCell}
-export {VueMDCLayoutInnerGrid}
+export {
+  classPrefix,
+  VueMDCLayoutGrid,
+  VueMDCLayoutCell,
+  VueMDCLayoutInnerGrid
+}
 
 export default {
   install (vm) {

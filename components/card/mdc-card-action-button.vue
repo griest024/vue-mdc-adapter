@@ -12,6 +12,8 @@
 
 <script>
 import {RippleBase, DispatchEventMixin, CustomElementMixin} from '../util'
+import {classPrefix as buttonClassPrefix} from '../mdc-button'
+import {classPrefix as cardClassPrefix} from '.'
 
 export default {
   name: 'mdc-card-action-button',
@@ -23,9 +25,9 @@ export default {
   data () {
     return {
       classes: {
-        'mdc-button': true,
-        'mdc-button--compact': true,
-        'mdc-card__action': true
+        [`${buttonClassPrefix}`]: true,
+        [`${buttonClassPrefix}--compact`]: true,
+        [`${cardClassPrefix}__action`]: true
       },
       styles: {}
     }

@@ -61,6 +61,7 @@
 <script>
 import MDCTextfieldFoundation from '@material/textfield/foundation'
 import {RippleBase} from '../util'
+import {classPrefix} from '.'
 
 export default {
   name: 'mdc-textfield',
@@ -93,26 +94,26 @@ export default {
     return {
       text: this.value,
       rootClasses: {
-        'mdc-text-field': true,
-        'mdc-text-field--upgraded': true,
-        'mdc-text-field--disabled': this.disabled,
-        'mdc-text-field--dense': this.dense,
-        'mdc-text-field--fullwidth': this.fullwidth,
-        'mdc-text-field--textarea': this.multiline
+        [`${classPrefix}`]: true,
+        [`${classPrefix}--upgraded`]: true,
+        [`${classPrefix}--disabled`]: this.disabled,
+        [`${classPrefix}--dense`]: this.dense,
+        [`${classPrefix}--fullwidth`]: this.fullwidth,
+        [`${classPrefix}--textarea`]: this.multiline
       },
       inputClasses: {
-        'mdc-text-field__input': true
+        [`${classPrefix}__input`]: true
       },
       labelClasses: {
-        'mdc-text-field__label': true
+        [`${classPrefix}__label`]: true
       },
       bottomClasses: {
-        'mdc-text-field__bottom-line': true
+        [`${classPrefix}__bottom-line`]: true
       },
       helpClasses: {
-        'mdc-text-field-helptext': true,
-        'mdc-text-field-helptext--persistent': this.helptextPersistent,
-        'mdc-text-field-helptext--validation-msg': this.helptextValidation
+        [`${classPrefix}-helptext`]: true,
+        [`${classPrefix}-helptext--persistent`]: this.helptextPersistent,
+        [`${classPrefix}-helptext--validation-msg`]: this.helptextValidation
       }
     }
   },

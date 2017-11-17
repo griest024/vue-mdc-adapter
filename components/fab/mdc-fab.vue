@@ -13,6 +13,7 @@
 
 <script>
 import {RippleBase, DispatchEventMixin, CustomElementMixin} from '../util'
+import {classPrefix} from '.'
 
 export default {
   name: 'mdc-fab',

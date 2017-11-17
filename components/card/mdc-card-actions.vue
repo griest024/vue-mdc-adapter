@@ -8,6 +8,7 @@
 
 <script>
 import MDCCardActionButton from './mdc-card-action-button.vue'
+import {classPrefix} from '.'
 
 export default {
   name: 'mdc-card-actions',
@@ -20,8 +21,8 @@ export default {
   data () {
     return {
       classes: {
-        'mdc-card__actions': true,
-        'mdc-card__actions--vertical': this.vertical
+        [`${classPrefix}__actions`]: true,
+        [`${classPrefix}__actions--vertical`]: this.vertical
       }
     }
   }

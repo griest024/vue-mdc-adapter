@@ -11,6 +11,7 @@
 <script>
 import MDCTabFoundation from '@material/tabs/tab/foundation'
 import { RippleBase, emitCustomEvent, DispatchEventMixin } from '../util'
+import {classPrefix} from '.'
 
 export default {
   name: 'mdc-tab',

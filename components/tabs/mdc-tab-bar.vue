@@ -9,6 +9,7 @@
 <script>
 import MDCTabBarFoundation from '@material/tabs/tab-bar/foundation'
 import MDCTabFoundation from '@material/tabs/tab/foundation'
+import {classPrefix} from '.'
 
 export default {
   name: 'mdc-tab-bar',

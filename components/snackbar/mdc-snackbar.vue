@@ -12,7 +12,8 @@
 
 <script>
 import MDCSnackbarFoundation from '@material/snackbar/foundation'
-import { getCorrectEventName } from '@material/animation'
+import {getCorrectEventName} from '@material/animation'
+import {classPrefix} from '.'
 
 export default {
   name: 'mdc-snackbar',

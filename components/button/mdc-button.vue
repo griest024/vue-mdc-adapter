@@ -12,6 +12,7 @@
 
 <script>
 import {RippleBase, DispatchEventMixin, CustomElementMixin} from '../util'
+import {classPrefix} from '.'
 
 export default {
   name: 'mdc-button',
@@ -33,12 +34,12 @@ export default {
   data () {
     return {
       classes: {
-        'mdc-button': true,
-        'mdc-button--raised': this.raised,
-        'mdc-button--unelevated': this.unelevated,
-        'mdc-button--stroked': this.stroked,
-        'mdc-button--dense': this.dense,
-        'mdc-button--compact': this.compact
+        [`${classPrefix}`]: true,
+        [`${classPrefix}--raised`]: this.raised,
+        [`${classPrefix}--unelevated`]: this.unelevated,
+        [`${classPrefix}--stroked`]: this.stroked,
+        [`${classPrefix}--dense`]: this.dense,
+        [`${classPrefix}--compact`]: this.compact
       },
       styles: {}
     }

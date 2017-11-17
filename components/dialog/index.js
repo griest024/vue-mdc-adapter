@@ -1,6 +1,7 @@
 import VueMDCDialog from './mdc-dialog.vue'
+import {classPrefix} from './constants'
 
-export {VueMDCDialog}
+export {classPrefix, VueMDCDialog}
 
 export default {
   install (vm) {

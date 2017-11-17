@@ -1,6 +1,7 @@
 import VueMDCRadio from './mdc-radio.vue'
+import {classPrefix} from './constants'
 
-export {VueMDCRadio}
+export {classPrefix, VueMDCRadio}
 
 export default {
   install (vm) {

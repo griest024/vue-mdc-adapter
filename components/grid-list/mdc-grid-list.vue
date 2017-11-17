@@ -8,6 +8,7 @@
 
 <script>
 import MDCGridListFoundation from '@material/grid-list/foundation'
+import {classPrefix} from '.'
 
 export default {
   name: 'mdc-grid-list',

@@ -9,6 +9,8 @@ import {
   VueMDCTitle
 } from './mdc-typography.js'
 
+export {classPrefix} from '.'
+
 export const components = {
   VueMDCTextSection,
   VueMDCText,

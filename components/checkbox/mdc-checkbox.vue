@@ -25,6 +25,7 @@
 /* global HTMLElement */
 import MDCCheckboxFoundation from '@material/checkbox/foundation'
 import {getCorrectEventName} from '@material/animation'
+import {classPrefix} from '.'
 
 import {RippleBase} from '../util'
 

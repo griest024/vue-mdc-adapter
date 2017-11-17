@@ -1,3 +1,5 @@
+import {classPrefix} from '.'
+
 const typos = [
   'display4', 
   'display3', 

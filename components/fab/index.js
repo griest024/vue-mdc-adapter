@@ -1,6 +1,7 @@
 import VueMDCFAB from './mdc-fab.vue'
+import {classPrefix} from './constants'
 
-export {VueMDCFAB}
+export {classPrefix, VueMDCFAB}
 
 export default {
   install (vm) {

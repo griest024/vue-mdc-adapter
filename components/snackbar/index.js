@@ -1,6 +1,7 @@
 import VueMDCSnackbar from './mdc-snackbar.vue'
+import {classPrefix} from './constants'
 
-export {VueMDCSnackbar}
+export {classPrefix, VueMDCSnackbar}
 
 export default {
   install (vm) {

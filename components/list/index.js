@@ -4,8 +4,10 @@ import VueMDCListDivider from './mdc-list-divider.vue'
 import VueMDCListGroup from './mdc-list-group.vue'
 import VueMDCListGroupHeader from './mdc-list-group-header.vue'
 import VueMDCListGroupDivider from './mdc-list-group-divider.vue'
+import {classPrefix} from './constants'
 
 export {
+  classPrefix,
   VueMDCList,
   VueMDCListItem,
   VueMDCListDivider,

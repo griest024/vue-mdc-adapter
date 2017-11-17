@@ -17,6 +17,8 @@
 </template>
 
 <script>
+import {classPrefix} from '.'
+
 export default {
   name: 'mdc-grid-tile',
   props: {

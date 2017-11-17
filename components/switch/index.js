@@ -1,6 +1,7 @@
 import VueMDCSwitch from './mdc-switch.vue'
+import {classPrefix} from './constants'
 
-export {VueMDCSwitch}
+export {classPrefix, VueMDCSwitch}
 
 export default {
   install (vm) {

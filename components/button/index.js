@@ -1,6 +1,7 @@
 import VueMDCButton from './mdc-button.vue'
+import {classPrefix} from './constants'
 
-export {VueMDCButton}
+export {classPrefix, VueMDCButton}
 
 export default {
   install (vm) {

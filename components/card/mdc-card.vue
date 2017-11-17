@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import {classPrefix} from '.'
+
 export default {
   name: 'mdc-card',
   props: {
@@ -14,7 +16,7 @@ export default {
   data () {
     return {
       classes: {
-        'mdc-card--theme-dark': this.dark
+        [`${classPrefix}--theme-dark`]: this.dark
       }
     }
   }

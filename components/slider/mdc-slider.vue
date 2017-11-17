@@ -24,6 +24,7 @@
 
 <script>
 import MDCSliderFoundation from '@material/slider/foundation'
+import {classPrefix} from '.'
 
 export default {
   name: 'mdc-slider',

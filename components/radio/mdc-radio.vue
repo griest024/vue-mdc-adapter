@@ -17,6 +17,7 @@
 <script>
 import MDCRadioFoundation from '@material/radio/foundation'
 import {RippleBase} from '../util'
+import {classPrefix} from '.'
 
 export default {
   name: 'mdc-radio',

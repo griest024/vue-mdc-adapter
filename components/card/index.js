@@ -8,17 +8,21 @@ import VueMDCCardHorizontal from './mdc-card-horizontal.vue'
 import VueMDCCardImg from './mdc-card-img.vue'
 import VueMDCCardActions from './mdc-card-actions.vue'
 import VueMDCCardActionButton from './mdc-card-action-button.vue'
+import {classPrefix} from './constants'
 
-export {VueMDCCard}
-export {VueMDCCardMedia}
-export {VueMDCCardHeader}
-export {VueMDCCardTitle}
-export {VueMDCCardSubtitle}
-export {VueMDCCardText}
-export {VueMDCCardHorizontal}
-export {VueMDCCardImg}
-export {VueMDCCardActions}
-export {VueMDCCardActionButton}
+export {
+  classPrefix,
+  VueMDCCard,
+  VueMDCCardMedia,
+  VueMDCCardHeader,
+  VueMDCCardTitle,
+  VueMDCCardSubtitle,
+  VueMDCCardText,
+  VueMDCCardHorizontal,
+  VueMDCCardImg,
+  VueMDCCardActions,
+  VueMDCCardActionButton
+}
 
 export default {
   install (vm) {

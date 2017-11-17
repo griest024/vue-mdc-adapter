@@ -1,6 +1,7 @@
 import VueMDCICon from './mdc-icon.vue'
+import {classPrefix} from './constants'
 
-export {VueMDCICon}
+export {classPrefix, VueMDCICon}
 
 export default {
   install (vm) {

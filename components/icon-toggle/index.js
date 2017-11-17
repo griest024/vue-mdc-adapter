@@ -1,6 +1,7 @@
 import VueMDCIConToggle from './mdc-icon-toggle.vue'
+import {classPrefix} from './constants'
 
-export {VueMDCIConToggle}
+export {classPrefix, VueMDCIConToggle}
 
 export default {
   install (vm) {

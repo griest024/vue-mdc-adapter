@@ -1,6 +1,7 @@
 import VueMDCSlider from './mdc-slider.vue'
+import {classPrefix} from './constants'
 
-export {VueMDCSlider}
+export {classPrefix, VueMDCSlider}
 
 export default {
   install (vm) {

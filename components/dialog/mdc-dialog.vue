@@ -33,6 +33,7 @@
 import MDCDialogFoundation from '@material/dialog/foundation'
 import { createFocusTrapInstance } from '@material/dialog/util'
 import {VueMDCButton} from '../button'
+import {classPrefix} from '.'
 
 export default {
   name: 'mdc-dialog',

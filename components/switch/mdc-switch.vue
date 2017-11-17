@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import {classPrefix} from '.'
 
 export default {
   name: 'mdc-switch',

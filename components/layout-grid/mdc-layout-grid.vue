@@ -8,6 +8,8 @@
 
 
 <script>
+import {classPrefix} from '.'
+
 export default {
   name: 'mdc-layout-grid',
   props: {

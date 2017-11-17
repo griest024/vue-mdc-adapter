@@ -1,6 +1,8 @@
 import VueMDCLinearProgress from './mdc-linear-progress.vue'
+import {classPrefix} from './constants'
 
 export {
+  classPrefix,
   VueMDCLinearProgress
 }
 

@@ -4,8 +4,10 @@ import VueMDCDrawerHeader from './mdc-drawer-header.vue'
 import VueMDCDrawerList from './mdc-drawer-list.vue'
 import VueMDCDrawerItem from './mdc-drawer-item.vue'
 import VueMDCDrawerDivider from './mdc-drawer-divider.vue'
+import {classPrefix} from './constants'
 
 export {
+  classPrefix,
   VueMDCDrawer,
   VueMDCDrawerLayout,
   VueMDCDrawerHeader,

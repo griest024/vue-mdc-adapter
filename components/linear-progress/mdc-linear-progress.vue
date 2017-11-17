@@ -14,6 +14,7 @@
 
 <script>
 import MDCLinearProgressFoundation from '@material/linear-progress/foundation'
+import {classPrefix} from '.'
 
 const ProgressPropType = {
   type: [Number, String],

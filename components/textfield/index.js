@@ -1,6 +1,7 @@
 import VueMDCTextField from './mdc-textfield.vue'
+import {classPrefix} from './constants'
 
-export {VueMDCTextField}
+export {classPrefix, VueMDCTextField}
 
 export default {
   install (vm) {
